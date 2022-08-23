@@ -1,0 +1,85 @@
+:root {
+    --color-blue:    #3021F5;
+    --color-yellow:  #FFD700;
+    --color-grey:    #D6D6D6;
+    --color-white:   #FFFFFF;
+}
+
+h2 {
+    color: var(--color-blue);
+}
+
+body {
+    background-color: var(--color-grey);
+    font-family: "futura-pt",sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header, main, .cards-header, .cards-container {
+    margin: 0 2em;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.index-img {
+    overflow: hidden;
+}
+
+.container {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-header {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: .2rem;
+}
+
+.cards-container {
+    background-color: var(--color-yellow);
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.cards-container-numbers {
+    flex-basis: 33%;
+    margin: 0 .5rem;
+}
+
+.cards-container-numbers p:first-of-type {
+    color: var(--color-blue);
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.cards-container-numbers p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.btn-details {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-weight: bold;
+    border: none;
+    padding: .6rem .75rem;
+    margin-bottom: 1rem;
+}
+
+footer img {
+    width: 20%;
+    margin-bottom: 2rem;
+}

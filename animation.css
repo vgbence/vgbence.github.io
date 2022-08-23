@@ -1,0 +1,60 @@
+
+.btn-details:hover {
+    cursor: pointer; 
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+
+footer img:hover {
+    animation: spin 2s infinite ease-out;
+}
+
+.cards-container:hover, .cards-header:hover {
+    box-shadow: 0 5px 5px 0 var(--color-grey); 
+    transform: scale(1.05); 
+}
+
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+}
+
+@media (max-width: 1090px) {
+    .index-img {
+        height: 9rem;
+    }
+
+    .index-img img {
+        height: auto;
+    }
+
+    body {
+        font-size: 2.25vw;
+    }
+
+    .container {
+        width: 55%;
+    }
+
+    .cards-container { 
+        flex-direction: column;
+        justify-content: center;
+    }  
+
+    .cards-container-numbers {
+        margin: 3rem, 0;
+    }
+
+    .cards-container-numbers p:first-of-type {
+        font-size: 2.5rem;
+        margin-top: .5rem;
+    }
+
+    footer img {
+        width: 30%;
+    }
+}
